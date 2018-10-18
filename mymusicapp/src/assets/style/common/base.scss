@@ -1,0 +1,80 @@
+@charset "UTF-8";
+[v-cloak] {
+  display: none;
+}
+
+*{
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+html{
+  font-size: calc(10vw/3.75);
+  overflow: hidden;
+  ::-webkit-scrollbar {
+    display:none
+  }
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  // background-color: #fff;
+  ::-webkit-scrollbar {
+    display:none
+  }
+}
+
+body {
+  color: $main-text;
+  background: $bg-color;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif !important;
+  text-align: justify;
+}
+#app {
+  height: 100%;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  overflow: hidden;
+}
+
+a {
+  color: #404040;
+  text-decoration: none;
+}
+
+.clear{
+  clear: both;
+}
+
+input {
+  &::-webkit-input-placeholder {color: $icon-text;}
+  &:-ms-input-placeholder {color: $icon-text;}
+  &::-moz-placeholder {color: $icon-text;}
+  &:-moz-placeholder {color: $icon-text;}
+}
+
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td,img{
+  margin:0;padding:0
+}
+button,h1,h2,h3,h4,h5,h6,input,select,textarea{
+  font-size:100%
+}
+
+em {
+  font-style: normal;
+}
